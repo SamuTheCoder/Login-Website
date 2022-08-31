@@ -10,7 +10,13 @@
   </head>
   <body>
     <div class="flex">
-      <form class="flex-container" action="login.html" method="POST">
+      <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+      <form
+        class="flex-container"
+        action="login.html"
+        method="POST"
+        target="dummyframe"
+      >
         <h1 style="color: white">Login</h1>
         <input
           type="email"
@@ -24,7 +30,8 @@
           placeholder="Enter your Password"
           id="password"
         />
-        <input type="submit" name="login" value="Login" onclick="validate" />
+
+        <input type="submit" name="login" value="Login" onclick="validate()" />
         <!-- input elements inside a form must have a name attribute in or´'der to be sent-->
       </form>
     </div>
