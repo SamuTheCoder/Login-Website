@@ -1,0 +1,63 @@
+body{
+    background-image: url(camping.jpg);
+    background-repeat: no-repeat;
+    font-family: Tahoma, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 15% 35%; /* 15 % margin-top and 35% margin left and right */
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.flex-container input[type="email"], .flex-container input[type="password"]{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgba(166,0,255,1); /*border-width, border-type, border-color*/
+    border-radius: 25px;
+    margin: 0 0 20px;
+    text-align: center;
+    width: 220px;
+    min-width: 150px;
+    height: 35px;
+    background: rgba(0,0,0, 0.2);
+    color:white;
+    transition: 0.25s;
+}
+
+.flex-container input[type="email"]:focus, .flex-container input[type="password"]:focus {
+    width: 270px;
+    border-color: rgba(240,233,5,1);
+}
+
+.flex-container input[type="submit"]{
+    width: 110px;
+    border: 5px solid rgba(166,0,255,1);
+    border-radius: 25px;
+    background: rgba(0,0,0, 0.2);
+    color: white;
+    transition: 0.25s;
+}
+
+.flex-container input[type="submit"]:hover{
+    background-color: rgba(166,0,255,1);
+}
+
+
+
+

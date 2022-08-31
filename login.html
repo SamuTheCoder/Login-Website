@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="flex">
+      <form class="flex-container" action="login.html" method="POST">
+        <h1 style="color: white">Login</h1>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          id="email"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your Password"
+          id="password"
+        />
+        <input type="submit" name="login" value="Login" onclick="validate" />
+        <!-- input elements inside a form must have a name attribute in or´'der to be sent-->
+      </form>
+    </div>
+  </body>
+</html>
